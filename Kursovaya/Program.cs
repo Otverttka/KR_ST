@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO.Ports;
 
 namespace Kursovaya
 {
@@ -14,9 +15,13 @@ namespace Kursovaya
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Messenger());
-        }
+            // Тестовая часть
+            Phislvl phislvl = new Phislvl();
+            
+    }
     }
 }

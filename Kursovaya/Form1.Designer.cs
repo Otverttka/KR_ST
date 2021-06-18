@@ -124,6 +124,7 @@ namespace Kursovaya
             this.COM1ComboBox.Name = "COM1ComboBox";
             this.COM1ComboBox.Size = new System.Drawing.Size(92, 21);
             this.COM1ComboBox.TabIndex = 9;
+            this.COM1ComboBox.SelectedIndexChanged += new System.EventHandler(this.COM1ComboBox_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -142,6 +143,7 @@ namespace Kursovaya
             this.ConnectButton.TabIndex = 11;
             this.ConnectButton.Text = "Connect";
             this.ConnectButton.UseVisualStyleBackColor = true;
+            this.ConnectButton.Click += new System.EventHandler(this.ConnectButton_Click);
             // 
             // DisconnectButton
             // 
@@ -199,6 +201,17 @@ namespace Kursovaya
             // Speed1ComboBox
             // 
             this.Speed1ComboBox.FormattingEnabled = true;
+            this.Speed1ComboBox.Items.AddRange(new object[] {
+            "300",
+            "600",
+            "1200",
+            "2400",
+            "4800",
+            "9600",
+            "14400",
+            "28800",
+            "36000",
+            "115000"});
             this.Speed1ComboBox.Location = new System.Drawing.Point(505, 127);
             this.Speed1ComboBox.Name = "Speed1ComboBox";
             this.Speed1ComboBox.Size = new System.Drawing.Size(92, 21);
@@ -207,6 +220,17 @@ namespace Kursovaya
             // Speed2ComboBox
             // 
             this.Speed2ComboBox.FormattingEnabled = true;
+            this.Speed2ComboBox.Items.AddRange(new object[] {
+            "300",
+            "600",
+            "1200",
+            "2400",
+            "4800",
+            "9600",
+            "14400",
+            "28800",
+            "36000",
+            "115000"});
             this.Speed2ComboBox.Location = new System.Drawing.Point(642, 127);
             this.Speed2ComboBox.Name = "Speed2ComboBox";
             this.Speed2ComboBox.Size = new System.Drawing.Size(92, 21);
@@ -224,6 +248,10 @@ namespace Kursovaya
             // DataBits1Box
             // 
             this.DataBits1Box.FormattingEnabled = true;
+            this.DataBits1Box.Items.AddRange(new object[] {
+            "7",
+            "8",
+            "9"});
             this.DataBits1Box.Location = new System.Drawing.Point(505, 178);
             this.DataBits1Box.Name = "DataBits1Box";
             this.DataBits1Box.Size = new System.Drawing.Size(92, 21);
@@ -232,6 +260,10 @@ namespace Kursovaya
             // DataBits2Box
             // 
             this.DataBits2Box.FormattingEnabled = true;
+            this.DataBits2Box.Items.AddRange(new object[] {
+            "7",
+            "8",
+            "9"});
             this.DataBits2Box.Location = new System.Drawing.Point(642, 178);
             this.DataBits2Box.Name = "DataBits2Box";
             this.DataBits2Box.Size = new System.Drawing.Size(92, 21);
@@ -249,6 +281,11 @@ namespace Kursovaya
             // StopBits1Box
             // 
             this.StopBits1Box.FormattingEnabled = true;
+            this.StopBits1Box.Items.AddRange(new object[] {
+            "None",
+            "One",
+            "Two",
+            "OnePointFive"});
             this.StopBits1Box.Location = new System.Drawing.Point(505, 227);
             this.StopBits1Box.Name = "StopBits1Box";
             this.StopBits1Box.Size = new System.Drawing.Size(92, 21);
@@ -257,6 +294,11 @@ namespace Kursovaya
             // StopBits2Box
             // 
             this.StopBits2Box.FormattingEnabled = true;
+            this.StopBits2Box.Items.AddRange(new object[] {
+            "None",
+            "One",
+            "Two",
+            "OnePointFive"});
             this.StopBits2Box.Location = new System.Drawing.Point(642, 227);
             this.StopBits2Box.Name = "StopBits2Box";
             this.StopBits2Box.Size = new System.Drawing.Size(92, 21);
@@ -274,6 +316,12 @@ namespace Kursovaya
             // Parity1Box
             // 
             this.Parity1Box.FormattingEnabled = true;
+            this.Parity1Box.Items.AddRange(new object[] {
+            "None",
+            "Odd",
+            "Even",
+            "Mark",
+            "Space"});
             this.Parity1Box.Location = new System.Drawing.Point(505, 275);
             this.Parity1Box.Name = "Parity1Box";
             this.Parity1Box.Size = new System.Drawing.Size(92, 21);
@@ -282,6 +330,12 @@ namespace Kursovaya
             // Parity2Box
             // 
             this.Parity2Box.FormattingEnabled = true;
+            this.Parity2Box.Items.AddRange(new object[] {
+            "None",
+            "Odd",
+            "Even",
+            "Mark",
+            "Space"});
             this.Parity2Box.Location = new System.Drawing.Point(642, 275);
             this.Parity2Box.Name = "Parity2Box";
             this.Parity2Box.Size = new System.Drawing.Size(92, 21);
